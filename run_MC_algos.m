@@ -67,7 +67,7 @@ Xr    = cell(1,nr_algos);
 for l=1:nr_algos
     if contains(alg_name{l},'HM-IRLS') || contains(alg_name{l},'AM-IRLS') ...
             || contains(alg_name{l},'IRLS-col') || contains(alg_name{l},'IRLS-row')
-        opts{l} = getDefaultOpts_IRLS(alg_name{l});
+        opts{l} = getDefaultOpts_IRLS;
         opts{l} = setExtraOpts(opts{l},opts_new{l});
         prob{l}.d1     = d1;
         prob{l}.d2     = d2;
